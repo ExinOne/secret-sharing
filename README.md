@@ -63,7 +63,7 @@ Split private key into 3/5 multisig(put your private key in `key.log`):
 python sharing.py -s -k key.log -m 3 -x 5
 ```
 
-Recover private key via multiple multisig subkey(put your multiple subkey in `key.log`):
+Recover private key via multiple multisig subkey(put your multiple subkey in `key.log` line by line):
 
 ``` bash
 python sharing.py -r -k key.log -m 3
