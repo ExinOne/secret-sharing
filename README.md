@@ -14,6 +14,11 @@
 - [Support](#support)
 - [License](#license)
 
+## Features
+
+- Split private key into multisig
+- Recover private key via multiple multisig subkey
+
 ## Installation
 
 - Python 3.7+ required
@@ -68,11 +73,6 @@ Recover private key via multiple multisig subkey(put your multiple subkey in `ke
 ``` bash
 python sharing.py -r -k key.log -m 3
 ```
-
-## Features
-
-- Split private key into multisig
-- Recover private key via multiple multisig subkey
 
 ## Contributing
 
