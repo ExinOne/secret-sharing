@@ -18,7 +18,6 @@ def cmdline_args():
     p = argparse.ArgumentParser(description=
         """
         Exin Secret Sharing based on Shamir's Secret Sharing Scheme.
-        Copyright © 2019 Exin <robin@exin.one>
         """,
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
