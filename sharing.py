@@ -6,7 +6,7 @@
 # Distributed under terms of the MIT license.
 #
 # Desc: Exin Secret Sharing based on Shamir's Secret Sharing Scheme
-# User: Robin@ExinPool
+# User: Robin@Exin
 # Date: 2019-08-18
 # Time: 11:39:30
 
