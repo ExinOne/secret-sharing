@@ -6,8 +6,8 @@
 
 ## Table of Contents 
 
-- [Installation](#installation)
 - [Features](#features)
+- [Installation](#installation)
 - [Contributing](#contributing)
 - [Team](#team)
 - [FAQ](#faq)
