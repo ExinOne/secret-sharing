@@ -4,7 +4,7 @@
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-## Table of Contents 
+## Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
@@ -28,7 +28,7 @@
 - Clone this repo to your server using:
 
 ``` bash
-git clone https://github.com/ExinOne/secret-sharing
+$ git clone https://github.com/ExinOne/secret-sharing
 ```
 
 ### Setup
@@ -36,14 +36,14 @@ git clone https://github.com/ExinOne/secret-sharing
 Install related dependencies.
 
 ``` bash
-apt-get -y install pip
-pip install git+https://github.com/blockstack/secret-sharing
+$ apt-get -y install pip
+$ pip install git+https://github.com/blockstack/secret-sharing
 ```
 
 ### Usage
 
 ``` bash
-python sharing.py --help
+$ python sharing.py --help
 usage: sharing.py [-h] [-s] [-r] [-k KEYFILE] [-m {2,3}] [-x {3,5}]
 
 Exin Secret Sharing based on Shamir's Secret Sharing Scheme.
@@ -62,16 +62,23 @@ optional arguments:
 Try python <script_name> -s/-r
 ```
 
-Split private key into 3/5 multisig(put your private key in `key.log`):
+Create a file named `key.log` and put your private key in the file as a single line.
 
 ``` bash
-python sharing.py -s -k key.log -m 3 -x 5
+$ touch key.log
+$ vim key.log
 ```
 
-Recover private key via multiple multisig subkey(put your multiple subkey in `key.log` line by line):
+Split private key into 3/5 multisig:
 
 ``` bash
-python sharing.py -r -k key.log -m 3
+$ python sharing.py -s -k key.log -m 3 -x 5
+```
+
+Recover private key via multiple multisig subkey(put your multiple subkey in `key.log` line by line, the example required 3 subkey):
+
+``` bash
+$ python sharing.py -r -k key.log -m 3
 ```
 
 ## Contributing
