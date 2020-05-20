@@ -104,3 +104,5 @@ Reach out to us at one of the following places!
 ## License
 
 **MIT**
+
+Copyright 2019 © <a href="https://exin.one" target="_blank">Exin</a>.
