@@ -35,15 +35,29 @@ $ git clone https://github.com/ExinOne/secret-sharing
 
 Install related dependencies.
 
+Ubuntu:
+
 ``` bash
-$ apt-get -y install pip
-$ pip install git+https://github.com/blockstack/secret-sharing
+$ sudo apt update
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository ppa:deadsnakes/ppa
+$ sudo apt -y install python3.7
+
+$ sudo apt -y install python3-pip
+$ sudo pip3 install git+https://github.com/blockstack/secret-sharing
+```
+
+macOS:
+
+``` bash
+$ brew install python3
+$ sudo pip3 install git+https://github.com/blockstack/secret-sharing
 ```
 
 ### Usage
 
 ``` bash
-$ python sharing.py --help
+$ python3 sharing.py --help
 usage: sharing.py [-h] [-s] [-r] [-k KEYFILE] [-m {2,3}] [-x {3,5}]
 
 Exin Secret Sharing based on Shamir's Secret Sharing Scheme.
@@ -72,13 +86,13 @@ $ vim key.log
 Split private key into 3/5 multisig:
 
 ``` bash
-$ python sharing.py -s -k key.log -m 3 -x 5
+$ python3 sharing.py -s -k key.log -m 3 -x 5
 ```
 
 Recover private key via multiple multisig subkey(put your multiple subkey in `key.log` line by line, the example required 3 subkey):
 
 ``` bash
-$ python sharing.py -r -k key.log -m 3
+$ python3 sharing.py -r -k key.log -m 3
 ```
 
 ## Contributing

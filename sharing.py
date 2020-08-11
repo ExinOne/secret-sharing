@@ -76,7 +76,7 @@ def main():
         else:
             pass
     except:
-        print('Try python <script_name> -s/-r')
+        print('Try python3 <script_name> -s/-r')
 
 if __name__ == "__main__":
     main()
