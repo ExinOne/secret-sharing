@@ -73,7 +73,7 @@ optional arguments:
                         multisig min (default: 3)
   -x {3,5}, --max {3,5}
                         multisig max (default: 5)
-Try python <script_name> -s/-r
+Try python3 <script_name> -s/-r
 ```
 
 Create a file named `key.log` and put your private key in the file as a single line.
