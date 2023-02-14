@@ -27,9 +27,9 @@ def cmdline_args():
                    help="recover private key")
     p.add_argument("-k", "--keyfile", type=str, dest='keyfile',
                    help="private key or something sensitive file")
-    p.add_argument("-m", "--min", type=int, choices=[2,3], default=3,
+    p.add_argument("-m", "--min", type=int, choices=[2,3,4,5,6,7,8,9,10], default=3,
                    dest='min', help="multisig min")
-    p.add_argument("-x", "--max", type=int, choices=[3,5], default=5,
+    p.add_argument("-x", "--max", type=int, choices=[2,3,4,5,6,7,8,9,10], default=5,
                    dest='max', help="multisig max")
 
     return(p.parse_args())
