@@ -44,14 +44,14 @@ $ sudo add-apt-repository ppa:deadsnakes/ppa
 $ sudo apt -y install python3.7
 
 $ sudo apt -y install python3-pip
-$ sudo pip3 install git+https://github.com/blockstack/secret-sharing
+$ pip3 install git+https://github.com/shea256/secret-sharing
 ```
 
 macOS:
 
 ``` bash
 $ brew install python3
-$ sudo pip3 install git+https://github.com/blockstack/secret-sharing
+$ pip3 install git+https://github.com/shea256/secret-sharing
 ```
 
 ### Usage
